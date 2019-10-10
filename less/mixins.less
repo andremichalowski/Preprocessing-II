@@ -23,3 +23,19 @@
     align-items: @align-items;
 }
 
+//Button
+.button(){
+    color: @white;
+    background-color: @easternblue;
+    padding: 1% 3%;
+    .hover();
+    border-radius: 5px;
+}
+
+// button hover effect
+
+.hover() {
+    &:hover {
+        background-color: darken (@easternblue, 15%)
+    }
+}
