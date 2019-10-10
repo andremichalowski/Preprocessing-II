@@ -24,18 +24,22 @@
 }
 
 //Button
-.button(){
+.button() {
+    width: 100%;
+    font-size: 1.6rem;
     color: @white;
-    background-color: @easternblue;
-    padding: 1% 3%;
+    background-color: #17A2B8;
+    padding: 5% 5%;
+    margin: 1% 1%;
     .hover();
-    border-radius: 5px;
+    border-radius: 10px;
+    .flex(column, center, center)
 }
 
 // button hover effect
 
 .hover() {
     &:hover {
-        background-color: darken (@easternblue, 15%)
+        background-color: darken(rgb(14, 168, 161), 15%);
     }
 }

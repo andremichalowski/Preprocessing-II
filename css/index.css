@@ -284,3 +284,19 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.btn {
+  width: 100%;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  padding: 5% 5%;
+  margin: 1% 1%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  background-color: #08615d;
+}
