@@ -1,3 +1,55 @@
+// HEADER MAIN
+
+.lower-section {
+  padding: 0 15%;
+  // .bkrd();d
+}
+
+.header-main-container {
+  .flex(column, center, center);
+}
+
+.bus-container {
+  .flex(column, center, center);
+}
+
+.header-writing h2 {
+  padding: 2% 0%;
+  @media @mobile {
+    padding: 1%;
+    font-size: 2rem;
+  }
+}
+
+
+.header-writing p {
+  padding-bottom: 2% 0%;
+  @media @mobile {
+    padding: 1%;
+    font-size: 1rem;
+  }
+}
+
+  #fun-bus {
+    width: 100%;
+    max-width: 800px;
+    max-height: 230px;
+  }
+
+  .header-writing {
+    max-width: 800px;
+    max-height: 230px;
+    .flex(column, center, flex-start);
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      padding: 1%;
+      font-size: 1rem;
+    }
+  }
+
+
+// MAIN BODY CONTENT
 .home {
 
   .content-section {
@@ -5,17 +57,41 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    @media @mobile {
+      .flex(column, center, center);
+      .phone();
+      padding: 1%;
+      margin: 10px 0;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        .phone();
+        padding: 1%;
+      } 
+    }
+    .text-content h2 {
+      @media @mobile {
+        font-size: 2rem;
+      }
+    }
+    .text-content p {
+      @media @mobile {
+        font-size: 1rem;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+        .phone();
+        padding: 1%;
+    }
 
       img {
         border-radius: 10px;
@@ -26,6 +102,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      .flex(column-reverse, center, center);
+      .phone();
+      padding: 1%;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +122,21 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+      .flex(column, center, center);
+      .phone();
+      padding: 1%;
+    }
+    .destination h4 {
+      @media @mobile {
+        font-size: 2rem;
+      }
+    }
+    .destination p {
+      @media @mobile {
+        font-size: 1rem;
+      }
 
     img {
       border-radius: 10px;
@@ -52,10 +148,39 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile {
+      .flex(column, center, center);
+      .phone();
+      padding: 1%;
+    }
+    
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+        .flex(column, center, center);
+        .phone();
+        padding: 1%;
+
+      }
     }
   }
 }// home
+
+BUTTONS
+
+.btn {
+  .button();
+  @media @mobile {
+    width: 100%;
+    font-size: 1rem;
+    color: @white;
+    background-color: #17A2B8;
+    padding: 2% 100%;
+    margin: 1% 1%;
+    .hover();
+    border-radius: 10px;
+    .flex(column, center, center)
+  }
+}

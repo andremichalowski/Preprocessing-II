@@ -1,1 +1,50 @@
 // Mixins in here
+
+
+// Building Colors:
+.bkbl() {
+    background-color: blue;
+}
+.bkgrn() {
+    background-color: green;
+}
+.bkrd() {
+    background-color: red;
+}
+.bkyllw() {
+    background-color: yellow;
+}
+
+//Flexbox:
+.flex(@flex-direction, @justify-content, @align-items){
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content: @justify-content;
+    align-items: @align-items;
+}
+
+//Button
+.button() {
+    width: 100%;
+    font-size: 1.6rem;
+    color: @white;
+    background-color: #17A2B8;
+    padding: 5% 5%;
+    margin: 1% 1%;
+    .hover();
+    border-radius: 10px;
+    .flex(column, center, center)
+}
+
+// button hover effect
+
+.hover() {
+    &:hover {
+        background-color: darken(rgb(14, 168, 161), 15%);
+    }
+}
+
+.phone {
+	font-size: 75%;
+	padding: .5% auto;
+}
